@@ -1,0 +1,93 @@
+﻿/* Fix height and enable scrolling */
+.grid {
+    height: 16.5rem;
+    overflow-y: auto;
+}
+
+    .grid ::deep table {
+        min-width: 100%;
+    }
+
+/* Sticky header while scrolling */
+::deep thead {
+    position: sticky;
+    top: 0;
+    background-color: #eee;
+    z-index: 1;
+}
+
+/* For virtualized grids, it's essential that all rows have the same known height */
+::deep tr {
+    height: 30px;
+}
+
+::deep tbody td {
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 0;
+    text-overflow: ellipsis;
+}
+
+::deep th.country-name {
+    width: 14rem;
+}
+
+/* Subtle stripe effect */
+::deep tr:nth-child(even) {
+    background: rgba(255,255,255,0.4);
+}
+
+/* Don't collapse rows even if they are empty */
+::deep tbody tr {
+    height: 1.8rem;
+}
+
+/* Stop name text from wrapping, and truncate with ellipsis */
+::deep tbody .magnify {
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 0;
+    text-overflow: ellipsis;
+}
+
+/* Magnifying glass */
+::deep .magnify .col-options-button {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /> </svg>');
+}
+
+.search-box {
+    position: relative;
+}
+
+    .search-box:before {
+        content: ' ';
+        width: 1.25rem;
+        height: 1.25rem;
+        position: absolute;
+        left: .75rem;
+        top: calc(50% - 1.25rem/2);
+    }
+
+    .search-box input[type=search] {
+        border-color: blue;
+        border-radius: 5px;
+        padding-left: 3px;
+    }
+
+.page-size-chooser {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+    .page-size-chooser select {
+        margin: 0 1rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+.close-button {
+    border: 0;
+    background-color: transparent;
+    font-size: larger;
+}
+

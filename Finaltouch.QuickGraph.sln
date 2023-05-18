@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33626.354
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finaltouch.QuickGraph.Web.Server", "Finaltouch.QuickGraph.Web\Server\Finaltouch.QuickGraph.Web.Server.csproj", "{05C1B48B-E244-4A3A-BF69-43818D8D33F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finaltouch.QuickGraph.Web.Client", "Finaltouch.QuickGraph.Web\Client\Finaltouch.QuickGraph.Web.Client.csproj", "{6DF6AD21-9DA9-4171-AE06-758962EAC60C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finaltouch.QuickGraph.Web.Shared", "Finaltouch.QuickGraph.Web\Shared\Finaltouch.QuickGraph.Web.Shared.csproj", "{FF8A06C9-69FF-4807-8AC5-49C8E4E7A7E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05C1B48B-E244-4A3A-BF69-43818D8D33F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05C1B48B-E244-4A3A-BF69-43818D8D33F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05C1B48B-E244-4A3A-BF69-43818D8D33F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05C1B48B-E244-4A3A-BF69-43818D8D33F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DF6AD21-9DA9-4171-AE06-758962EAC60C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DF6AD21-9DA9-4171-AE06-758962EAC60C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DF6AD21-9DA9-4171-AE06-758962EAC60C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DF6AD21-9DA9-4171-AE06-758962EAC60C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF8A06C9-69FF-4807-8AC5-49C8E4E7A7E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF8A06C9-69FF-4807-8AC5-49C8E4E7A7E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF8A06C9-69FF-4807-8AC5-49C8E4E7A7E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF8A06C9-69FF-4807-8AC5-49C8E4E7A7E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BFC8AB77-0EE2-4801-A1E4-38A044B97AB3}
+	EndGlobalSection
+EndGlobal

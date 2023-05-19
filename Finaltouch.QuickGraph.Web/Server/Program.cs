@@ -1,3 +1,4 @@
+using Finaltouch.QuickGraph.Web.Server.Services;
 using Finaltouch.QuickGraph.Web.Shared.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -24,6 +25,7 @@ builder.Services.AddSwaggerGen(c =>
         Version = "v1"
     });
 });
+builder.Services.AddScoped<INamesRepository, NamesRepository>();
 var app = builder.Build();
 
 app.UseSwagger();

@@ -15,7 +15,7 @@
     <div class="row">
         <div class="col-lg-10 mx-auto">
             <div class="grid" tabindex="-1">
-                <QuickGrid @ref="Grid" ItemsProvider="@NamesProvider" Class="comic-name" Theme="default" Virtualize="true" Pagination="@Pagination">
+                <QuickGrid @ref="Grid" ItemsProvider="@NamesProvider" Class="comic-name" Theme="default" Pagination="@Pagination">
                     <PropertyColumn Title="State" Property="@(c => c.State)" Sortable="true" IsDefaultSortColumn="true">
                         <ColumnOptions>
                             <div class="search-box">
@@ -30,6 +30,7 @@
             </div>
             <Paginator State="@Pagination" />
         </div>
+
     </div>
 </div>
 

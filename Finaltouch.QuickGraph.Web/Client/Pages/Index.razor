@@ -1,7 +1,37 @@
-﻿@page "/old"
+﻿@page "/"
+@using Microsoft.AspNetCore.Components;
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.QuickGrid
+@layout Shared.MainLayout
 
-<PageTitle>Index</PageTitle>
+<PageTitle>Baby Names</PageTitle>
+<div class="container py-3">
+    <div class="row mb-4">
+        <div class="col-lg-8 mx-auto text-center">
+            <h1 class="display-6">Most Popular Baby Names by State</h1>
+        </div>
+    </div>
 
-<h1>Hello, world!</h1>
+    <div class="row">
+        <div class="col-lg-10 mx-auto">
+            <div class="grid" tabindex="-1">
+                <QuickGrid @ref="Grid" ItemsProvider="@NamesProvider" Class="comic-name" Theme="default" Pagination="@Pagination">
+                    <PropertyColumn Title="State" Property="@(c => c.State)" Sortable="true" IsDefaultSortColumn="true">
+                        <ColumnOptions>
+                            <div class="search-box">
+                                <input type="search" autofocus @bind="Filter" @bind:event="oninput" placeholder="State Name..." />
+                            </div>
+                        </ColumnOptions>
+                    </PropertyColumn>
+                    <PropertyColumn Title="Name" Property="@(c => c.Name)" Sortable="true" />
+                    <PropertyColumn Title="Sex" Property="@(c => c.Sex)" Sortable="true" />
+                    <PropertyColumn Title="Rank" Property="@(c => c.RankWithinSex)" Sortable="true" />
+                </QuickGrid>
+            </div>
+            <Paginator State="@Pagination" />
+        </div>
 
-Welcome to your new app.
+    </div>
+</div>
+
+

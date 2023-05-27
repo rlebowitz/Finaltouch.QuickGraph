@@ -8,7 +8,7 @@ namespace Finaltouch.QuickGraph.Web.Client.Pages
 {
     //https://bbbootstrap.com/snippets/payment-form-three-different-payment-options-13285516
     //https://stackoverflow.com/questions/65882646/how-to-define-templated-component-in-renderfragment-with-its-context-available
-    public partial class NamesGrid
+    public partial class Index
     {
         [Inject]
         private HttpClient Client { get; set; } = default!;

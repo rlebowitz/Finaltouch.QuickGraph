@@ -1,0 +1,247 @@
+@import '_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css';
+
+/* /Pages/Index.razor.rz.scp.css */
+/* Fix height and enable scrolling */
+.grid[b-911w81yfhc] {
+    height: 16.5rem;
+    overflow-y: auto;
+}
+
+    .grid[b-911w81yfhc]  table {
+        min-width: 100%;
+    }
+
+/* Sticky header while scrolling */
+[b-911w81yfhc] thead {
+    position: sticky;
+    top: 0;
+    background-color: #eee;
+    z-index: 1;
+}
+
+/* For virtualized grids, it's essential that all rows have the same known height */
+[b-911w81yfhc] tr {
+    height: 30px;
+}
+
+[b-911w81yfhc] tbody td {
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 0;
+    text-overflow: ellipsis;
+}
+
+[b-911w81yfhc] th.country-name {
+    width: 14rem;
+}
+
+/* Subtle stripe effect */
+[b-911w81yfhc] tr:nth-child(even) {
+    background: rgba(255,255,255,0.4);
+}
+
+/* Don't collapse rows even if they are empty */
+[b-911w81yfhc] tbody tr {
+    height: 1.8rem;
+}
+
+/* Stop name text from wrapping, and truncate with ellipsis */
+[b-911w81yfhc] tbody .magnify {
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 0;
+    text-overflow: ellipsis;
+}
+
+/* Magnifying glass */
+[b-911w81yfhc] .magnify .col-options-button {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /> </svg>');
+}
+
+.search-box[b-911w81yfhc] {
+    position: relative;
+}
+
+    .search-box[b-911w81yfhc]:before {
+        content: ' ';
+        width: 1.25rem;
+        height: 1.25rem;
+        position: absolute;
+        left: .75rem;
+        top: calc(50% - 1.25rem/2);
+    }
+
+    .search-box input[type=search][b-911w81yfhc] {
+        border-color: blue;
+        border-radius: 5px;
+        padding-left: 3px;
+    }
+
+.page-size-chooser[b-911w81yfhc] {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+    .page-size-chooser select[b-911w81yfhc] {
+        margin: 0 1rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+.close-button[b-911w81yfhc] {
+    border: 0;
+    background-color: transparent;
+    font-size: larger;
+}
+
+/* /Shared/MainLayout.razor.rz.scp.css */
+.page[b-das870s39o] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-das870s39o] {
+    flex: 1;
+}
+
+.sidebar[b-das870s39o] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-das870s39o] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-das870s39o]  a, .top-row[b-das870s39o]  .btn-link {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+        text-decoration: none;
+    }
+
+    .top-row[b-das870s39o]  a:hover, .top-row[b-das870s39o]  .btn-link:hover {
+        text-decoration: underline;
+    }
+
+    .top-row[b-das870s39o]  a:first-child {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-das870s39o] {
+        display: none;
+    }
+
+    .top-row.auth[b-das870s39o] {
+        justify-content: space-between;
+    }
+
+    .top-row[b-das870s39o]  a, .top-row[b-das870s39o]  .btn-link {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-das870s39o] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-das870s39o] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-das870s39o] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row.auth[b-das870s39o]  a:first-child {
+        flex: 1;
+        text-align: right;
+        width: 0;
+    }
+
+    .top-row[b-das870s39o], article[b-das870s39o] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* /Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-e4orweirdd] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-e4orweirdd] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-e4orweirdd] {
+    font-size: 1.1rem;
+}
+
+.oi[b-e4orweirdd] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-e4orweirdd] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-e4orweirdd] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-e4orweirdd] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-e4orweirdd]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-e4orweirdd]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-e4orweirdd]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-e4orweirdd] {
+        display: none;
+    }
+
+    .collapse[b-e4orweirdd] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+    
+    .nav-scrollable[b-e4orweirdd] {
+        /* Allow sidebar to scroll for tall menus */
+        height: calc(100vh - 3.5rem);
+        overflow-y: auto;
+    }
+}

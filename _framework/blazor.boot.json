@@ -10,8 +10,8 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "Finaltouch.QuickGrid.Web.Client.wasm": "sha256-KCphG6VbcgpkpmfY4AwY2PKMV\/6HaDKFqJPTam1b0OE=",
-      "Finaltouch.QuickGrid.Web.Shared.wasm": "sha256-f9B0KHEyozvAvHlQw7SZSnTa7wHk9f4YTE9cDiLD\/Ck=",
+      "Finaltouch.QuickGrid.Web.Client.wasm": "sha256-fvYOhM9IjMW5o2MPrntQ9WASeytMVnJXrFgB46p+tSk=",
+      "Finaltouch.QuickGrid.Web.Shared.wasm": "sha256-uQd1Teg7pVIxdDTYY1DGPd2doJyqj4LSzrfqf9vq4Rc=",
       "Microsoft.AspNetCore.Components.QuickGrid.wasm": "sha256-UPmFCHELJVrRULe5wS5uPEckPsbdq3dDUq4Jg6Y7XkE=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-2CIoNDwjthINT\/o8u8zhBk2jvwbJkcinBKXMaUfO7EU=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-NbS2PnUa8mrGqvhaT+ZWW2yS78\/UcwAWEnlsV8Ey5Ks=",

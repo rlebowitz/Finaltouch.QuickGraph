@@ -16,7 +16,7 @@ jobs:
         dotnet-version: '8.x'
     # publishes Blazor project to the release-folder
     - name: Publish .NET Core Project
-      run: dotnet publish Finaltouch.QuickGraph.Web/Server/Finaltouch.QuickGraph.Web.Server.csproj -c Release -o release --nologo
+      run: dotnet publish Finaltouch.QuickGrid.Web/Server/Finaltouch.QuickGrid.Web.Server.csproj -c Release -o release --nologo
     - name: Commit wwwroot to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4.4.1
       with:
@@ -25,7 +25,7 @@ jobs:
         FOLDER: release/wwwroot
     # changes the base-tag in index.html from '/' to 'Finaltouch.Modal' to match GitHub Pages repository subdirectory
     - name: Change base-tag in index.html from / to Finaltouch.Modal
-      run: sed -i 's/<base href="\/" \/>/<base href="\/Finaltouch.QuickGraph.Web\/" \/>/g' release/wwwroot/index.html
+      run: sed -i 's/<base href="\/" \/>/<base href="\/Finaltouch.QuickGrid.Web\/" \/>/g' release/wwwroot/index.html
     # add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project. (Allow files and folders starting with an underscore)
     - name: Add .nojekyll file
       run: touch release/wwwroot/.nojekyll

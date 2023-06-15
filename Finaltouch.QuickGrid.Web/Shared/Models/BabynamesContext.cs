@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace Finaltouch.QuickGraph.Web.Shared.Models;
+namespace Finaltouch.QuickGrid.Web.Shared.Models;
 //https://www.c-sharpcorner.com/article/get-started-with-entity-framework-core-using-sqlite/
 public partial class BabynamesContext : DbContext
 {

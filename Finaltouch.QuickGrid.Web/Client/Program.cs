@@ -1,4 +1,4 @@
-using Finaltouch.QuickGraph.Web.Client;
+using Finaltouch.QuickGrid.Web.Client;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 

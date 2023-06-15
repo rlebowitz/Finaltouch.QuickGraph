@@ -1,9 +1,8 @@
-using Finaltouch.QuickGraph.Web.Server.Services;
-using Finaltouch.QuickGraph.Web.Shared;
-using Finaltouch.QuickGraph.Web.Shared.Models;
+using Finaltouch.QuickGrid.Web.Server.Services;
+using Finaltouch.QuickGrid.Web.Shared;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Finaltouch.QuickGraph.Web.Server.Controllers
+namespace Finaltouch.QuickGrid.Web.Server.Controllers
 {
     [Route("api/[controller]/[action]")]
     [Route("[controller]")]

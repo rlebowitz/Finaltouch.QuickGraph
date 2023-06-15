@@ -1,10 +1,10 @@
-﻿using Finaltouch.QuickGraph.Web.Shared;
-using Finaltouch.QuickGraph.Web.Shared.Models;
+﻿using Finaltouch.QuickGrid.Web.Shared;
+using Finaltouch.QuickGrid.Web.Shared.Models;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.QuickGrid;
 using System.Net.Http.Json;
 
-namespace Finaltouch.QuickGraph.Web.Client.Pages
+namespace Finaltouch.QuickGrid.Web.Client.Pages
 {
     //https://bbbootstrap.com/snippets/payment-form-three-different-payment-options-13285516
     //https://stackoverflow.com/questions/65882646/how-to-define-templated-component-in-renderfragment-with-its-context-available

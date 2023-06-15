@@ -1,4 +1,4 @@
-﻿namespace Finaltouch.QuickGraph.Web.Shared.Models;
+﻿namespace Finaltouch.QuickGrid.Web.Shared.Models;
 
 public partial class Babyname
 {
@@ -10,9 +10,9 @@ public partial class Babyname
 
     public string Sex { get; set; } = null!;
 
-    public int Count { get; set; } 
+    public int Count { get; set; }
 
-    public int RankWithinSex { get; set; } 
+    public int RankWithinSex { get; set; }
 
     public double Per100kWithinSex { get; set; }
 }

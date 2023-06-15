@@ -1,6 +1,6 @@
-﻿using Finaltouch.QuickGraph.Web.Shared.Models;
+﻿using Finaltouch.QuickGrid.Web.Shared.Models;
 
-namespace Finaltouch.QuickGraph.Web.Shared
+namespace Finaltouch.QuickGrid.Web.Shared
 {
     public class NamesResult
     {

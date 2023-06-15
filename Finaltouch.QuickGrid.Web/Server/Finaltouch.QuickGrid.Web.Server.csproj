@@ -15,8 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Client\Finaltouch.QuickGraph.Web.Client.csproj" />
-    <ProjectReference Include="..\Shared\Finaltouch.QuickGraph.Web.Shared.csproj" />
+    <ProjectReference Include="..\Client\Finaltouch.QuickGrid.Web.Client.csproj" />
+    <ProjectReference Include="..\Shared\Finaltouch.QuickGrid.Web.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>

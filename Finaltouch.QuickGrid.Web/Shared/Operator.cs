@@ -1,4 +1,4 @@
-﻿namespace Finaltouch.QuickGraph.Web.Shared
+﻿namespace Finaltouch.QuickGrid.Web.Shared
 {
     public enum Operator
     {

@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Shared\Finaltouch.QuickGraph.Web.Shared.csproj" />
+    <ProjectReference Include="..\Shared\Finaltouch.QuickGrid.Web.Shared.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,11 +1,11 @@
-﻿using Finaltouch.QuickGraph.Web.Shared;
-using Finaltouch.QuickGraph.Web.Shared.Models;
+﻿using Finaltouch.QuickGrid.Web.Shared;
+using Finaltouch.QuickGrid.Web.Shared.Models;
 using Microsoft.AspNetCore.Components.QuickGrid;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Dynamic.Core;
 
-namespace Finaltouch.QuickGraph.Web.Server.Services
+namespace Finaltouch.QuickGrid.Web.Server.Services
 {
     public interface INamesRepository
     {

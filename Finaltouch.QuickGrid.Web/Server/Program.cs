@@ -1,5 +1,5 @@
-using Finaltouch.QuickGraph.Web.Server.Services;
-using Finaltouch.QuickGraph.Web.Shared.Models;
+using Finaltouch.QuickGrid.Web.Server.Services;
+using Finaltouch.QuickGrid.Web.Shared.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 

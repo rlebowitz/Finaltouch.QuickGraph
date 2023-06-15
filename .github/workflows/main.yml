@@ -13,12 +13,12 @@ jobs:
     - name: Setup .NET Core SDK
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '8.x'
+        dotnet-version: '8.0.x'
     # publishes Blazor project to the release-folder
     - name: Publish .NET Core Project
       run: dotnet publish Finaltouch.QuickGrid.Web/Server/Finaltouch.QuickGrid.Web.Server.csproj -c Release -o release --nologo
     - name: Commit wwwroot to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4.4.1
+      uses: JamesIves/github-pages-deploy-action@v4.4.2
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages

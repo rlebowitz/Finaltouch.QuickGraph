@@ -1,6 +1,7 @@
 using Finaltouch.QuickGrid.Web.Server.Services;
 using Finaltouch.QuickGrid.Web.Shared;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 
 namespace Finaltouch.QuickGrid.Web.Server.Controllers
 {
@@ -13,10 +14,11 @@ namespace Finaltouch.QuickGrid.Web.Server.Controllers
             NamesRepository = namesRepository;
         }
 
-        [HttpPost]
-        public NamesResult? GetBabyNames([FromBody] GridMetaData metaData)
+        [HttpGet]
+        public NamesResult? GetBabyNames([FromQuery] string metaData)
         {
-            return NamesRepository.GetBabyNames(metaData);
+            var data = JsonSerializer.Deserialize<GridMetaData>(Base64Url.Decode(metaData));
+            return data != null ? NamesRepository.GetBabyNames(data) : null;
         }
 
     }

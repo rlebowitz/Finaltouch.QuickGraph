@@ -2,6 +2,7 @@
 
 namespace Finaltouch.QuickGrid.Web.Shared
 {
+
     public class GridMetaData
     {
         public int StartIndex { get; set; }

@@ -3,6 +3,9 @@ using Finaltouch.QuickGrid.Web.Shared.Models;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.QuickGrid;
 using System.Net.Http.Json;
+using System.Net.Mime;
+using System.Text;
+using System.Text.Json;
 
 namespace Finaltouch.QuickGrid.Web.Client.Pages
 {
@@ -12,6 +15,7 @@ namespace Finaltouch.QuickGrid.Web.Client.Pages
     {
         [Inject]
         private HttpClient Client { get; set; } = default!;
+        private Uri RequestUri { get; set; } = default!;
         private GridItemsProvider<Babyname>? NamesProvider { get; set; }
 
         private PaginationState Pagination = new PaginationState { ItemsPerPage = 10 };
@@ -33,6 +37,7 @@ namespace Finaltouch.QuickGrid.Web.Client.Pages
         protected override void OnInitialized()
         {
             NamesProvider = Provider;
+            RequestUri = new Uri(Client.BaseAddress!, "api/BabyNames/GetBabyNames");
         }
 
         private async ValueTask<GridItemsProviderResult<Babyname>> Provider(GridItemsProviderRequest<Babyname> request)
@@ -57,9 +62,13 @@ namespace Finaltouch.QuickGrid.Web.Client.Pages
             return result;
         }
 
+        //https://stackoverflow.com/questions/43421126/how-to-use-httpclient-to-send-content-in-body-of-get-request
         public async Task<NamesResult?> GetNames(GridMetaData metaData)
         {
-            var response = await Client.PostAsJsonAsync("api/BabyNames/GetBabyNames", metaData);
+            var content = JsonSerializer.Serialize(metaData);
+            var builder = new UriBuilder(RequestUri);
+            builder.Query = "metaData=" + Base64Url.Encode(content);
+            var response = await Client.GetAsync(builder.Uri);
             if (response.IsSuccessStatusCode)
             {
                 return await response.Content.ReadFromJsonAsync<NamesResult>();

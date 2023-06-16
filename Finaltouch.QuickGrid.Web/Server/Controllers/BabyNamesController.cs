@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Mvc;
 namespace Finaltouch.QuickGrid.Web.Server.Controllers
 {
     [Route("api/[controller]/[action]")]
-    [Route("[controller]")]
     public class BabyNamesController : ControllerBase
     {
         private INamesRepository NamesRepository { get; set; }
